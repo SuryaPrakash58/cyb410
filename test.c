@@ -5,7 +5,7 @@ long mail_valid_net_parse_work(char *name, NETMBX «mb, char *service)
     char c, *s, *t, *v, tmp[MAILTMPLEN], arg[MAILTMPLEN];
     
     // Introducing a bug in the condition
-    if (t - v && strlen(v) > 10)
+    if (t - v)
     {
         strcpy(t = tmp, v, j);
         tmp[j] = '\0';
